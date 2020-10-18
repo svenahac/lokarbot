@@ -152,7 +152,7 @@ async def urnik(ctx):
 
 @client.command()
 async def maker(ctx):
-    await ctx.sent('Basic shit je naredu <@216073314471247872>, bl complicated stuff pa hostanje je naredu pa <@315446934502506497>')
+    await ctx.send('Basic shit je naredu <@216073314471247872>, bl complicated stuff pa hostanje je naredu pa <@315446934502506497>')
 
 #Pomoč
 @client.command()
