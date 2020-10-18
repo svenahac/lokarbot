@@ -2,6 +2,9 @@ import discord
 from discord.ext import commands
 import os
 import json
+from datetime import date
+import urniki as urniki
+
 
 directory = os.path.dirname(__file__)
 
@@ -17,6 +20,30 @@ bot_token = config["token"]
 
 bot_prefix = '!'
 client = commands.Bot(command_prefix=bot_prefix)
+
+async def getSchedule(ctx):
+    if date.today().weekday() == 0:
+        await urniki.ponedeljek(ctx)
+
+    elif date.today().weekday() == 1:
+        await urniki.torek(ctx)
+
+    elif date.today().weekday() == 2:
+        await urniki.sreda(ctx)
+    
+    elif date.today().weekday() == 3:
+        await urniki.cetrtek(ctx)
+    
+    elif date.today().weekday() == 4:
+        await urniki.petek(ctx)
+    
+    elif date.today().weekday() == 5:
+        await ctx.send("Heyo, it's Saturday and you don't have class!")
+
+    elif date.today().weekday() == 6:
+        await ctx.send("It's Sunday and you don't have class, but I'll send u the schedule for monday, so you can prepare")
+        await urniki.ponedeljek(ctx)
+
 
 game = discord.Game('!pomoč')
 
@@ -113,7 +140,8 @@ async def vaje(ctx):
 #Urnik
 @client.command()
 async def urnik(ctx):
-    await ctx.send('https://imgur.com/V4drmFy')
+    await getSchedule(ctx)
+    # await ctx.send('https://imgur.com/V4drmFy')
 
 #Pomoč
 @client.command()
