@@ -38,11 +38,14 @@ async def getSchedule(ctx):
         await urniki.petek(ctx)
     
     elif date.today().weekday() == 5:
-        await ctx.send("Heyo, it's Saturday and you don't have class!")
+        await ctx.send("Sobota je, nimaš pouka!")
 
     elif date.today().weekday() == 6:
-        await ctx.send("It's Sunday and you don't have class, but I'll send u the schedule for monday, so you can prepare")
+        await ctx.send("Ker je nedelja, nimaš pouka. Pošiljam ti urnik za jutri, da se lahko pripraviš.")
         await urniki.ponedeljek(ctx)
+    
+    else:
+        await ctx.send("Nevem kako je prišlo do tega, ampak ni noben dan v tednu")
 
 
 game = discord.Game('!pomoč')
@@ -139,13 +142,21 @@ async def vaje(ctx):
 
 #Urnik
 @client.command()
-async def urnik(ctx):
+async def udanes(ctx):
     await getSchedule(ctx)
     # await ctx.send('https://imgur.com/V4drmFy')
+
+@client.command()
+async def urnik(ctx):
+    await ctx.send('https://imgur.com/V4drmFy')
+
+@client.command()
+async def maker(ctx):
+    await ctx.sent('Basic shit je naredu <@216073314471247872>, bl complicated stuff pa hostanje je naredu pa <@315446934502506497>')
 
 #Pomoč
 @client.command()
 async def pomoč(ctx):
-    await ctx.send('``` Urnik: !urnik \n Zoom kode: !kode ```')
+    await ctx.send('``` Urnik za danes: !udanes \n Slika urnika: !urnik \n Zoom kode: !kode \n Kreator: !maker```')
 
 client.run(bot_token)
