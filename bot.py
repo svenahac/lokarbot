@@ -7,6 +7,9 @@ directory = os.path.dirname(__file__)
 
 # Token import
 f = open("./config.json".format(directory))
+
+# On Aiken's server use this
+# f = open("/home/aiken/lokarbot/config.json".format(directory))
 config = json.loads(f.read())
 f.close()
 
