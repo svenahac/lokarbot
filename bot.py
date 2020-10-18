@@ -1,7 +1,16 @@
 import discord
 from discord.ext import commands
+import os
+import json
 
-bot_token = 'NzY3MDUwODMzNjUyMDg4ODQy.X4sRwQ.Ax2o7Jr_F57LqEy_8HoRO7Fb59k'
+directory = os.path.dirname(__file__)
+
+# Token import
+f = open("./config.json".format(directory))
+config = json.loads(f.read())
+f.close()
+
+bot_token = config["token"]
 
 bot_prefix = '!'
 client = commands.Bot(command_prefix=bot_prefix)
