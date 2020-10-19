@@ -150,10 +150,6 @@ async def udanes(ctx):
 async def urnik(ctx):
     await ctx.send('https://imgur.com/V4drmFy')
 
-@client.command()
-async def maker(ctx):
-    await ctx.send('Basic shit je naredu <@216073314471247872>, bl complicated stuff pa hostanje je naredu pa <@315446934502506497>')
-
 #Pomoč
 @client.command()
 async def pomoč(ctx):
