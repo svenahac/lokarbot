@@ -12,9 +12,6 @@ async def ponedeljek(ctx):
     embedVar.add_field(name="12.00", value="Programiranje 1", inline=False)
     embedVar.add_field(name="13.00", value="Programiranje 1", inline=False)
 
-    embedVar.add_field(name="16.00", value="Kolokviji 1P", inline=False)
-    embedVar.add_field(name="17.00", value="Kolokviji 1P", inline=False)
-
     await ctx.send(embed=embedVar)
 
 async def torek(ctx):
