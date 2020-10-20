@@ -47,6 +47,31 @@ async def getSchedule(ctx):
     else:
         await ctx.send("Nevem kako je prišlo do tega, ampak ni noben dan v tednu")
 
+async def urnikjutri(ctx):
+    if date.today().weekday() == 0:
+        await urniki.torek(ctx)
+
+    elif date.today().weekday() == 1:
+        await urniki.sreda(ctx)
+
+    elif date.today().weekday() == 2:
+        await urniki.cetrtek(ctx)
+    
+    elif date.today().weekday() == 3:
+        await urniki.petek(ctx)
+    
+    elif date.today().weekday() == 4:
+        await ctx.send("Jutri ni pouka KEKW")
+    
+    elif date.today().weekday() == 5:
+        await ctx.send("Jutri ni pouka KEKW")
+
+    elif date.today().weekday() == 6:
+        await urniki.ponedeljek(ctx)
+    
+    else:
+        await ctx.send("Nevem kako je prišlo do tega, ampak ni noben dan v tednu")
+
 
 game = discord.Game('!pomoč')
 
@@ -144,7 +169,11 @@ async def vaje(ctx):
 @client.command()
 async def udanes(ctx):
     await getSchedule(ctx)
-    # await ctx.send('https://imgur.com/V4drmFy')
+
+
+@client.command()
+async def ujutri(ctx):
+    await urnikjutri(ctx)
 
 @client.command()
 async def urnik(ctx):
