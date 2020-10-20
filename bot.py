@@ -170,7 +170,6 @@ async def vaje(ctx):
 async def udanes(ctx):
     await getSchedule(ctx)
 
-
 @client.command()
 async def ujutri(ctx):
     await urnikjutri(ctx)
@@ -179,6 +178,19 @@ async def ujutri(ctx):
 async def urnik(ctx):
     await ctx.send('https://imgur.com/V4drmFy')
 
+# Surprise commands
+@client.command()
+async def penis(ctx):
+    await ctx.send('Tvoj je majhen')
+    
+@client.command()
+async def avtizem(ctx):
+    await ctx.send('Imaš ti')
+
+@client.command()
+async def peder(ctx):
+    await ctx.send('Si ti')
+    
 #Pomoč
 @client.command()
 async def pomoč(ctx):
