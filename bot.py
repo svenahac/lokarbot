@@ -182,6 +182,6 @@ async def urnik(ctx):
 #Pomoč
 @client.command()
 async def pomoč(ctx):
-    await ctx.send('``` Urnik za danes: !udanes \n Slika urnika: !urnik \n Zoom kode: !kode```')
+    await ctx.send('``` Urnik za danes: !udanes \n Urnik za jutri: !ujutri \n Slika urnika: !urnik \n Zoom kode: !kode```')
 
 client.run(bot_token)
