@@ -191,6 +191,10 @@ async def avtizem(ctx):
 async def peder(ctx):
     await ctx.send('Si ti')
     
+@client.command()
+async def cursedNuzzews(ctx):
+    await ctx.send('https://cdn.discordapp.com/attachments/439519668819066880/743373316743626802/Bout_hitem_with_this_furry_shit___Animation.mp4')
+    
 #Pomoč
 @client.command()
 async def pomoč(ctx):
