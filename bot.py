@@ -12,7 +12,7 @@ directory = os.path.dirname(__file__)
 f = open("./config.json".format(directory))
 
 # For some fucking reason the upper code doesn't on Aiken's server so here we fucking go
-# f open("/home/aiken/lokarbot/config.json".format(directory))
+# f = open("/home/aiken/lokarbot/config.json".format(directory))
 
 config = json.loads(f.read())
 f.close()
