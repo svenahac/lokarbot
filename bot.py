@@ -179,26 +179,9 @@ async def ujutri(ctx):
 async def urnik(ctx):
     await ctx.send('https://imgur.com/V4drmFy')
 
-# Surprise commands
-@client.command()
-async def penis(ctx):
-    await ctx.send('Tvoj je majhen')
-    
-@client.command()
-async def avtizem(ctx):
-    await ctx.send('Imaš ti')
-
-@client.command()
-async def peder(ctx):
-    await ctx.send('Si ti')
-    
-@client.command()
-async def cursedNuzzews(ctx):
-    await ctx.send('https://cdn.discordapp.com/attachments/439519668819066880/743373316743626802/Bout_hitem_with_this_furry_shit___Animation.mp4')
-    
 @client.command()
 async def cleanup(ctx):
-    await ctx.send('\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.')
+    await ctx.send('\n.'* 50)
 #Pomoč
 @client.command()
 async def pomoč(ctx):
