@@ -102,7 +102,7 @@ async def lap(ctx):
 #LAV
 @client.command()
 async def lav(ctx):
-    await ctx.send('``` Zoom koda za Linearno Algebro VAJE je: ``` \n https://uni-lj-si.zoom.us/j/92420125807?pwd=TzZPM3MxeExBbFczRkp1R201ZEZyUT09')
+    await ctx.send('``` Zoom koda za Linearno Algebro VAJE je: ``` \n https://uni-lj-si.zoom.us/j/3838491224')
 #MANGP
 @client.command()
 async def mangp(ctx):
