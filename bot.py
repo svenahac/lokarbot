@@ -162,7 +162,7 @@ async def ujutri(ctx):
 
 @client.command()
 async def urnik(ctx):
-    await ctx.send('https://imgur.com/V4drmFy')
+    await ctx.send('https://imgur.com/pi0YeXh')
 
 @client.command()
 async def cleanup(ctx):
