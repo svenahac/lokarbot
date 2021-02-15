@@ -83,18 +83,10 @@ async def on_ready():
 
 #Kode za vsa predavanja posebaj  
       
-#RPP
+#ROM
 @client.command(aliases=['rp-p'])
-async def rpp(ctx):
-    await ctx.send('``` Zoom koda za Računalniški praktikum PREDAVANJE je: ``` \n https://uni-lj-si.zoom.us/j/97775158275')
-#RPVL
-@client.command()
-async def rpvl(ctx):
-    await ctx.send('``` Zoom koda za Računalniški praktikum VAJE-LIHI je: ``` \n https://uni-lj-si.zoom.us/j/99119331635')
-#RPVS
-@client.command()
-async def rpvs(ctx):
-    await ctx.send('``` Zoom koda za Računalniški praktikum VAJE-SODI je: ``` \n https://uni-lj-si.zoom.us/j/91777367872')
+async def rom(ctx):
+    await ctx.send('``` Zoom koda za ROM je: ``` \n https://uni-lj-si.zoom.us/j/91758346929')
 #LAP
 @client.command()
 async def lap(ctx):
@@ -119,14 +111,10 @@ async def mat1p(ctx):
 @client.command()
 async def mat1v(ctx):
     await ctx.send('``` Zoom koda za Matematiko 1 VAJE je: ``` \n https://fmf-uni-lj-si.zoom.us/j/96182315459?pwd=WUpiTmFFVzV6aEpoUHd0N1FPeEQ5QT09')
-#MVPP
+#FIZ
 @client.command()
-async def mvpp(ctx):
-    await ctx.send('``` Zoom koda za Matematiko v praksi PREDAVANJE je: ``` \n https://fmf-uni-lj-si.zoom.us/j/99734392447')
-#MVPV
-@client.command()
-async def mvpv(ctx):
-    await ctx.send('``` Zoom koda za Matematiko v praksi VAJE je: ``` \n https://fmf-uni-lj-si.zoom.us/j/99734392447')
+async def fiz(ctx):
+    await ctx.send('``` Zoom koda za Uvod v fiziko je: ``` \n https://uni-lj-si.zoom.us/j/98398601616?pwd=bzdRNmpBQ0orMWZTV1o5cmw4WmVSQT09')
 #PRO1P
 @client.command()
 async def pro1p(ctx):
@@ -140,17 +128,14 @@ async def pro1v(ctx):
 
 # Seznam vseh kod
 
-prakp = 'Računalniški praktikum preadavanje: !rpp'
-prakvl = 'Računalniški praktikum vaje-lihi: !rpvl'
-prakvs = 'Računalniški praktikum vaje-sodi: !rpvs'
+rovm = 'Računalniški praktikum preadavanje: !rom'
 ap = 'Linearna algebra predavanje: !lap'
 av = 'Linearna algebra vaje: !lav'
 angp = 'Mat. izražanje v Ang. jeziku predavanje: !mangp'
 angv = 'Mat. izražanje v Ang. jeziku vaje: !mangv'
 matp = 'Matematika 1 predavanje: !mat1p'
 matv = 'Matematika 1 vaje: !mat1v'
-mpp = 'Matematika v praksi predavanje: !mvpp'
-mpv = 'Matematika v praksi vaje: !mvpv'
+uvf = 'Matematika v praksi predavanje: !fiz'
 prop = 'Programiranje 1 predavanje: !pro1p'
 prov = 'Programiranje 1 vaje: !pro1v'
 
@@ -160,11 +145,11 @@ async def kode(ctx):
 
 @client.command()
 async def predavanja(ctx):
-    await ctx.send('``` Računalniški praktikum preadavanje: !rpp \n Linearna algebra predavanje: !lap \n Mat. izražanje v Ang. jeziku predavanje: !mangp \n Matematika 1 predavanje: !mat1p \n Matematika v praksi predavanje: !mvpp \n Programiranje 1 predavanje: !pro1p```')
+    await ctx.send('``` Računalniška ordoja v matematiki preadavanje: !rom \n Linearna algebra predavanje: !lap \n Mat. izražanje v Ang. jeziku predavanje: !mangp \n Matematika 1 predavanje: !mat1p \n Uvod v fiziko predavanje: !fiz \n Programiranje 1 predavanje: !pro1p```')
 
 @client.command()
 async def vaje(ctx):
-    await ctx.send('``` Računalniški praktikum vaje-lihi: !rpvl \n Računalniški praktikum vaje-sodi: !rpvs \n Linearna algebra vaje: !lav \n Mat. izražanje v Ang. jeziku vaje: !mangv \n Matematika 1 vaje: !mat1v \n Matematika v praksi vaje: !mvpv \n Programiranje 1 vaje: !pro1v ```')
+    await ctx.send('``` Računalniška ordoja v matematiki vaje: !rom \n Linearna algebra vaje: !lav \n Mat. izražanje v Ang. jeziku vaje: !mangv \n Matematika 1 vaje: !mat1v \n Uvod v fiziko vaje: !fiz \n Programiranje 1 vaje: !pro1v ```')
 
 #Urnik
 @client.command()
