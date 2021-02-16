@@ -111,10 +111,14 @@ async def mat1p(ctx):
 @client.command()
 async def mat1v(ctx):
     await ctx.send('``` Zoom koda za Matematiko 1 VAJE je: ``` \n https://fmf-uni-lj-si.zoom.us/j/96182315459?pwd=WUpiTmFFVzV6aEpoUHd0N1FPeEQ5QT09')
-#FIZ
+#FIZP
 @client.command()
-async def fiz(ctx):
-    await ctx.send('``` Zoom koda za Uvod v fiziko je: ``` \n https://uni-lj-si.zoom.us/j/98398601616?pwd=bzdRNmpBQ0orMWZTV1o5cmw4WmVSQT09')
+async def fizp(ctx):
+    await ctx.send('``` Zoom koda za Uvod v fiziko PREDAVANJE je: ``` \n https://uni-lj-si.zoom.us/j/98398601616?pwd=bzdRNmpBQ0orMWZTV1o5cmw4WmVSQT09')
+#FIZV
+@client.command()
+async def fizv(ctx):
+    await ctx.send('``` Zoom koda za Uvod v fiziko VAJE je: ``` \n https://uni-lj-si.zoom.us/j/8605032776')
 #PRO1P
 @client.command()
 async def pro1p(ctx):
@@ -135,7 +139,8 @@ angp = 'Mat. izražanje v Ang. jeziku predavanje: !mangp'
 angv = 'Mat. izražanje v Ang. jeziku vaje: !mangv'
 matp = 'Matematika 1 predavanje: !mat1p'
 matv = 'Matematika 1 vaje: !mat1v'
-uvf = 'Matematika v praksi predavanje: !fiz'
+uvfp = 'Matematika v praksi predavanje: !fizp'
+uvfv = 'Matematika v praksi predavanje: !fizv'
 prop = 'Programiranje 1 predavanje: !pro1p'
 prov = 'Programiranje 1 vaje: !pro1v'
 
@@ -145,11 +150,11 @@ async def kode(ctx):
 
 @client.command()
 async def predavanja(ctx):
-    await ctx.send('``` Računalniška ordoja v matematiki preadavanje: !rom \n Linearna algebra predavanje: !lap \n Mat. izražanje v Ang. jeziku predavanje: !mangp \n Matematika 1 predavanje: !mat1p \n Uvod v fiziko predavanje: !fiz \n Programiranje 1 predavanje: !pro1p```')
+    await ctx.send('``` Računalniška ordoja v matematiki preadavanje: !rom \n Linearna algebra predavanje: !lap \n Mat. izražanje v Ang. jeziku predavanje: !mangp \n Matematika 1 predavanje: !mat1p \n Uvod v fiziko predavanje: !fizp \n Programiranje 1 predavanje: !pro1p```')
 
 @client.command()
 async def vaje(ctx):
-    await ctx.send('``` Računalniška ordoja v matematiki vaje: !rom \n Linearna algebra vaje: !lav \n Mat. izražanje v Ang. jeziku vaje: !mangv \n Matematika 1 vaje: !mat1v \n Uvod v fiziko vaje: !fiz \n Programiranje 1 vaje: !pro1v ```')
+    await ctx.send('``` Računalniška ordoja v matematiki vaje: !rom \n Linearna algebra vaje: !lav \n Mat. izražanje v Ang. jeziku vaje: !mangv \n Matematika 1 vaje: !mat1v \n Uvod v fiziko vaje: !fizv \n Programiranje 1 vaje: !pro1v ```')
 
 #Urnik
 @client.command()
