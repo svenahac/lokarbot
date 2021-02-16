@@ -110,7 +110,7 @@ async def mat1p(ctx):
 #MAT1V
 @client.command()
 async def mat1v(ctx):
-    await ctx.send('``` Zoom koda za Matematiko 1 VAJE je: ``` \n https://fmf-uni-lj-si.zoom.us/j/96182315459?pwd=WUpiTmFFVzV6aEpoUHd0N1FPeEQ5QT09')
+    await ctx.send('``` Zoom koda za Matematiko 1 VAJE je: ``` \n https://uni-lj-si.zoom.us/j/99322100700?pwd=UUcvTHZSOHY0TTRpQ08xOVpMaXZIQT09')
 #FIZP
 @client.command()
 async def fizp(ctx):
