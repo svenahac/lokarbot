@@ -83,10 +83,18 @@ async def on_ready():
 
 #Kode za vsa predavanja posebaj  
       
-#ROM
+#ROMP
 @client.command(aliases=['rp-p'])
-async def rom(ctx):
-    await ctx.send('``` Zoom koda za ROM je: ``` \n https://uni-lj-si.zoom.us/j/91758346929')
+async def romp(ctx):
+    await ctx.send('``` Zoom koda za ROM PREDAVANJE je: ``` \n https://uni-lj-si.zoom.us/j/91758346929')
+#ROMV1
+@client.command(aliases=['rp-p'])
+async def romv1(ctx):
+    await ctx.send('``` Zoom koda za ROM VAJE v torek je: ``` \n https://uni-lj-si.zoom.us/j/94836248331')
+#ROMV2
+@client.command(aliases=['rp-p'])
+async def romv2(ctx):
+    await ctx.send('``` Zoom koda za ROM VAJE v sredo je: ``` \n https://uni-lj-si.zoom.us/j/96764664252')
 #LAP
 @client.command()
 async def lap(ctx):
@@ -106,7 +114,7 @@ async def mangv(ctx):
 #MAT1P
 @client.command()
 async def mat1p(ctx):
-    await ctx.send('``` Saksida ne uporablja stalne kode za zoom, ker je boomer. Kodo vsakič znova pošlje na mail. ```')
+    await ctx.send('``` Zoom koda za Matematično izražanje v angleškem jeziku VAJE je: ``` \n https://uni-lj-si.zoom.us/j/3123738848')
 #MAT1V
 @client.command()
 async def mat1v(ctx):
@@ -132,7 +140,9 @@ async def pro1v(ctx):
 
 # Seznam vseh kod
 
-rovm = 'Računalniški praktikum preadavanje: !rom'
+rovmp = 'ROM preadavanje: !romp'
+rovmp = 'ROM vaje za torek: !romv1'
+rovmp = 'ROM vaje za sredo: !romv2'
 ap = 'Linearna algebra predavanje: !lap'
 av = 'Linearna algebra vaje: !lav'
 angp = 'Mat. izražanje v Ang. jeziku predavanje: !mangp'
@@ -150,11 +160,11 @@ async def kode(ctx):
 
 @client.command()
 async def predavanja(ctx):
-    await ctx.send('``` Računalniška ordoja v matematiki preadavanje: !rom \n Linearna algebra predavanje: !lap \n Mat. izražanje v Ang. jeziku predavanje: !mangp \n Matematika 1 predavanje: !mat1p \n Uvod v fiziko predavanje: !fizp \n Programiranje 1 predavanje: !pro1p```')
+    await ctx.send('``` Računalniška ordoja v matematiki preadavanje: !romp \n Linearna algebra predavanje: !lap \n Mat. izražanje v Ang. jeziku predavanje: !mangp \n Matematika 1 predavanje: !mat1p \n Uvod v fiziko predavanje: !fizp \n Programiranje 1 predavanje: !pro1p```')
 
 @client.command()
 async def vaje(ctx):
-    await ctx.send('``` Računalniška ordoja v matematiki vaje: !rom \n Linearna algebra vaje: !lav \n Mat. izražanje v Ang. jeziku vaje: !mangv \n Matematika 1 vaje: !mat1v \n Uvod v fiziko vaje: !fizv \n Programiranje 1 vaje: !pro1v ```')
+    await ctx.send('``` Računalniška ordoja v matematiki vaje v torek: !romv1 \n Računalniška ordoja v matematiki vaje v sredo: !romv2 \n Linearna algebra vaje: !lav \n Mat. izražanje v Ang. jeziku vaje: !mangv \n Matematika 1 vaje: !mat1v \n Uvod v fiziko vaje: !fizv \n Programiranje 1 vaje: !pro1v ```')
 
 #Urnik
 @client.command()
