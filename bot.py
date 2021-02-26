@@ -84,15 +84,15 @@ async def on_ready():
 #Kode za vsa predavanja posebaj  
       
 #ROMP
-@client.command(aliases=['rp-p'])
+@client.command()
 async def romp(ctx):
     await ctx.send('``` Zoom koda za ROM PREDAVANJE je: ``` \n https://uni-lj-si.zoom.us/j/91758346929')
 #ROMV1
-@client.command(aliases=['rp-p'])
+@client.command()
 async def romv1(ctx):
     await ctx.send('``` Zoom koda za ROM VAJE v torek je: ``` \n https://uni-lj-si.zoom.us/j/94836248331')
 #ROMV2
-@client.command(aliases=['rp-p'])
+@client.command()
 async def romv2(ctx):
     await ctx.send('``` Zoom koda za ROM VAJE v sredo je: ``` \n https://uni-lj-si.zoom.us/j/96764664252')
 #LAP
