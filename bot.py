@@ -114,7 +114,7 @@ async def mangv(ctx):
 #MAT1P
 @client.command()
 async def mat1p(ctx):
-    await ctx.send('``` Zoom koda za Matematično izražanje v angleškem jeziku VAJE je: ``` \n https://uni-lj-si.zoom.us/j/3123738848')
+    await ctx.send('``` Zoom koda za Matematiko 1 PREDAVANJE je: ``` \n https://uni-lj-si.zoom.us/j/3123738848')
 #MAT1V
 @client.command()
 async def mat1v(ctx):
