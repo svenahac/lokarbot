@@ -61,11 +61,11 @@ async def cetrtek(ctx):
 
 async def petek(ctx):
     embedVar = discord.Embed(title="Petek", description="Urnik za petek", color=0xFF0000)
+    embedVar.add_field(name="8.00", value="Matematika I - Predavanje", inline=False)
     embedVar.add_field(name="9.00", value="Matematika I - Predavanje", inline=False)
-    embedVar.add_field(name="10.00", value="Matematika I - Predavanje", inline=False)
 
-    embedVar.add_field(name="9.00", value="Matematika I - Vaje", inline=False)
     embedVar.add_field(name="10.00", value="Matematika I - Vaje", inline=False)
+    embedVar.add_field(name="11.00", value="Matematika I - Vaje", inline=False)
     
     embedVar.add_field(name="12.00", value="Matematično izražanje v angleščini - Vaje", inline=False)
     embedVar.add_field(name="13.00", value="Matematično izražanje v angleščini - Vaje", inline=False)
