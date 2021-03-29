@@ -55,7 +55,7 @@ async def cetrtek(ctx):
     embedVar.add_field(name="13.00", value="Linearna algebra - Predavanje", inline=False)
     embedVar.add_field(name="14.00", value="Linearna algebra - Predavanje", inline=False)
 
-    embedVar.add_field(name="13.00", value="Računalniška orodja v matematiki - Predavanje", inline=False)
+    embedVar.add_field(name="15.00", value="Računalniška orodja v matematiki - Predavanje", inline=False)
 
     await ctx.send(embed=embedVar)
 
